@@ -1,0 +1,31 @@
+public class Konwersje{
+  public static void main(String[] args){
+	  int a = 5;
+	  double b = 13.5;
+	  double c = b/a;//wynik =2.7//
+	  //  int c = b/a; //TAK NIE MOŻNA ZROBIĆ!
+	   //int c = (int)b/a; //RZUTOWANIE(jawna Konwersja)
+     //zapis poprawny ale stracimy dane po przecinku =2
+	   // double c = b/(double)a;zapis poprawny ale nie uzywany 
+	   //poniewaz wszystkie zmienne są automatycznie konwertowane
+	   //przez wirtualną maszynę Javy na najwyższy dostępny typ czyli double
+	  System.out.println(c);
+  }
+}
+//wynik: 2.7
+//******************************************************************************
+public class Konwersje{
+  public static void main(String[] args){
+	  char a = 'a';
+	  // zmiennej a (char) przypisujemy znak a
+	  int b = a;
+	  //zmiennej b typu int przypisujemy a.Kod znaku 'a' w tabeli ASCII =97
+	  char c = 101;
+	  // zmiennej c typu (char)z kolei przypisujemy kod 101, 
+	  //który odpowiada znakowi litery 'e' inaczej char c = (char)101;
+	  System.out.println(a+" "+b+" "+c);
+  }
+}
+/* wynik: 
+a 97 e 
+*/
