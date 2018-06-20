@@ -20,6 +20,19 @@ class Klasa{
 }
 7. W Javie wielkość liter ma znaczenie!
  int liczba;
- int Liczba;1
-2
+ int Liczba;
 To dwie różne zmienne!
+
+Klasa to fundament Javy. To dzięki nim jest ona w pełni obiektowa i przy tym tak wygodna. Jeśli ktoś wcześniej programował to być może termin ten jest mu już znany. Najprościej mówiąc klasa to taka przestrzeń, w której umieszczamy inne elementy, przechowujemy informacje i je przetwarzamy. Obrazowym przykładem może być czteroosobowa rodzina jadąca samochodem. Samochód to klasa, natomiast rodzina to jej elementy, powiemy o nich obiekty.
+class Klasa{
+tutaj jakieś elementy
+}
+Obiekt jest natomiast reprezentacją klasy i jej nośnikiem. Jeżeli mówimy o czymś, że jest obiektem w Javie, to tak naprawdę wyobrażamy sobie całą klasę i wszystko to co się w niej znajduje. Poprzez obiekt możemy odwoływać się do zmiennych, metod i innych elementów w niej zawartych. Gdybym zaczynał programować to wyobraziłbym to sobie jako encyklopedię. Jest to przede wszystkim książka, ale wiemy, że zawiera hasła, do których mamy bezpośredni dostęp i możemy je przeczytać.
+Klasa obiekt = new Klasa();1
+Powyższy przykład to obiekt wcześniej napisanej klasy Klasa.
+Metoda to dla kogoś kto już wcześniej programował inaczej funkcja. W niej dokonywane są na przykład obliczenia, lub inne operacje (właściwie komputer to głupia maszyna potrafiąca tylko dodawać zera i jedynki). Metody mogą nie zwracać nic, ale równie dobrze dać w wyniku typ prosty, lub zwrócić obiekt. Niektóre mogą przyjmować także parametry, inne działać tylko na rzecz obiektu, który je wywołuje.
+class Klasa{
+  void metoda1(){...} // to metoda nie zwracająca nic
+  int metoda2(){ return 1; }  // ta metoda zwraca w wyniku liczbę 1
+  Klasa metoda3(){ return new Klasa(); }  // ta metoda zwraca obiekt klasy Klasa
+  void metoda4(int parametr){ ... } // funkcja przyjmująca jeden argument typu int
