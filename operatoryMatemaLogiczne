@@ -1,0 +1,50 @@
+public class Operatory{
+  public static void main(String[] args){
+	  double b;  
+	  int a;
+	  /*wybierajac typ zmiennych jako doble tylko a lub wystarczy aby wynik np dzielenia byl poprawny 4.25
+	   kiedy a i b to int wynik dzielenia =4*/
+	   a = 17;
+	   b = 4;
+	  System.out.println("suma liczb "+a+" i "+b+" = "+(a+b));//=21 a=a+b <=> a+=b
+	  System.out.println("roznica liczb "+a+" i "+b+" = "+(a-b));//=13 a=a-b <=> a-=b
+	  System.out.println("iloczyn liczb "+a+" i "+b+" = "+(a*b)); //=68 a=a*b <=> a*=b
+	  System.out.println("wynik dzielenia liczb "+a+" i "+b+" = "+(a/b));//4.25 a=a/b <=> a/=b
+	  //jesli zmienne a i b bylyby typu int wynik = 4 ponieważ 4*4=16 i zostaje reszty 1
+	  System.out.println("reszta z dzielenia liczb "+a+" i "+b+" = "+(a%b)); 
+	  //=1 reszta z dzielenia a=a%b <=> a%=b
+  }
+}
+/* wynik:
+suma liczb 17 i 4.0 = 21.0
+roznica liczb 17 i 4.0 = 13.0
+iloczyn liczb 17 i 4.0 = 68.0
+wynik dzielenia liczb 17 i 4.0 = 4.25
+reszta z dzielenia liczb 17 i 4.0 = 1.0
+*/
+//**********************************************************
+public class Rozwiazanie{
+  public static void main(String[] args){
+	  double a,b,c;
+	  a = 1.0;
+	  b = 2.0;
+	  c = 3.0;
+	  System.out.println("(a+b)*c= "+((a+b)*c));
+	  System.out.println("a-b/c= "+(a-b/c));
+        //operator inkrementacji zwiekszenie a,b,c o 1 czyli a+1 itd
+	  a++;
+	  b++;
+	  c++;
+
+	  System.out.println("Czy a+b>c? "+((a+b)>c));
+	  // sprawdzenie czy a+b jest > od c wynik true lub false
+	  System.out.println("Czy a=b? "+(a==b));
+	  //porownie a i b wynik true lub false
+  }
+}
+/*wynik:
+(a+b)*c= 9.0
+a-b/c= 0.33333333333333337
+Czy a+b>c? true
+Czy a=b? false
+*/
