@@ -1,0 +1,52 @@
+public class Test{
+  public static void main(String[] args){
+	  String hello = "Witaj ";
+	  String world = "Swiecie!";
+	  String powitanie = hello+world; //łączenie dwoch Stringów
+	  System.out.println(powitanie);
+
+	  String czesc = powitanie.substring(0, 6)+"uczniu"; 
+	  // z stringu powitanie wybieramy ciag znakow(0, 6)od 0czyli W do spacji 6 znak
+	  System.out.println(czesc);
+  }
+}
+/*wyswietla:
+Witaj Swiecie!
+Witaj uczniu*/
+******************************************
+public class Rozwiazanie{
+  public static void main(String[] args){
+	  short a = 5;
+	  /*definiowanie i przypisanie zmiennej a typu short
+	  wartosc 5 mozna ta wartosc pozniej zmienic*/
+	  final int b = 129;
+	  /*definiowanie i przypisanie zmiennej a typu int 
+	  slowo kluczowe final powoduje ze mozna tylko raz przypisan jakas wartosc
+	  proba powtornego dopisania wartoscbedzie bledem*/
+	  final char c='d';
+	  //wartosc zmiennej typu char piszemy miedzy'jedna litera'
+
+	  System.out.println(a+"\n"+b+"\n"+c);
+	 /* inny sposob zapisu wynik bedzie ten sam 
+	  System.out.println(a);
+	  System.out.println(b);
+	  System.out.println(c);*/
+
+	  String x = "Ala ";
+	  String y = "ma ";
+	  String z = "kota";
+	  String zdanie = x+y+z;//laczenie trzech stringow x,y,z
+
+	  System.out.println(zdanie); 
+	  //wyswietla caly string zdanie
+	  System.out.println(zdanie.substring(0, 7));
+	  //wyswietla wartosci stringu zdanie od 0 czyli A do 7 czyli spacji po "ma "
+  }
+}
+/*wyswietla:
+5
+129
+d
+Ala ma kota
+Ala ma 
+*/
