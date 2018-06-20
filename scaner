@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class Witaj{
+    public static void main(String[] args){
+        String imie;
+        //deklarujemy zmienna imie  typu stringw nim zapiszemy swoje dane
+        Scanner odczyt = new Scanner(System.in);
+        //tworzymy deklarujemy nowy obiekt odczyt typu Scanner.
+        //oraz utworzenie obiektu, za pomocą operatora new
+        //Jako parametr konstruktora obiektu Scanner podaliśmy strumień wejścia System.in,
+        // dzięki czemu teraz będziemy mogli się komunikować z użytkownikiem
+        imie = odczyt.nextLine();
+        //przypisanie  wartosći z klawiatury zkonczonej enterem do zmiennej imie
+        System.out.println("Witaj "+imie); //wyświetlamy powitanie
+    }
+}
+/*
+po wpisaniu danych z klawiatury
+Witaj dane*/
+//*********************************************
+import java.util.Scanner;
+
+public class Odczyt{
+    public static void main(String[] args){
+        double a;
+        double b;
+
+        Scanner odczyt = new Scanner(System.in);
+
+        System.out.println("Podaj pierwszą liczbę: ");
+        a = odczyt.nextDouble();
+        System.out.println("Podaj drugą liczbę: ");
+        b = odczyt.nextDouble();
+
+        System.out.println(a+"+"+b+"="+(a+b));
+        System.out.println(a+"-"+b+"="+(a-b));
+        System.out.println(a+"*"+b+"="+(a*b));
+        System.out.println(a+"/"+b+"="+(a/b));
+    }
+}
+/* Wynik po wpisaniu liczb z klawiatury i zatwierdzeniu enterm program wykonuje obliczenia
+Podaj pierwszą liczbę: 
+33
+Podaj drugą liczbę: 
+44
+33.0+44.0=77.0
+33.0-44.0=-11.0
+33.0*44.0=1452.0
+33.0/44.0=0.75*/
