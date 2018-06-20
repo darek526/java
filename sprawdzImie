@@ -8,6 +8,7 @@ public class Odczyt{
 	  String imie = odczyt.nextLine();
 
 	  if("Maciek".equals(imie))
+	   // porownujemy ciągi znaków, przy pomocy metody equals(), a nie operatora ==.
 		  System.out.println("Cześć "+imie);
 	  else if("Kasia".equals(imie))
 		  System.out.println("Cześć "+imie);
