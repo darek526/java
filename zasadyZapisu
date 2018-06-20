@@ -1,0 +1,25 @@
+Zapis i konwencja nazewnictwa
+Zanim napiszemy swój pierwszy program w Javie musimy poznać sposób zapisu i konwencje nazewnictwa tego języka. Należy używać już wypracowanych schematów. Ułatwi to pracę zarówno nam, jak i osobom, które potencjalnie mogą czytać nasz kod.Pozwolę sobie wypunktować tutaj to co każdy programista Javy musi znać.
+1. Nazwy klas rozpoczynamy Wielką literą.
+ class Klasa{ ... }
+2. Nazwy metod rozpoczynamy z małej litery.
+ void metoda(){ ... }
+3. Nazwy zmiennych rozpoczynamy z małej litery.
+ int zmienna;
+4. Jeśli nazwa składa się z kilku wyrazów, to kolejne człony rozpoczynamy także z Wielkiej litery, co nazywamy notacją camelCase (rozpoczynamy z małej litery) oraz PascalCase (rozpoczynamy z wielkiej litery).
+ class NazwaMojejKlasy{ ... }
+ void toMojaMetoda(){ ... }
+ int jakasZmienna;
+5. Nazwy stałych piszemy WIELKIMI literami, a kolejne człony oddzielamy znakiem podkreślenia.
+ static final int TO_JEST_STALA;
+6. To nie obowiązek, ale w Javie zwykło się stawiać klamrę otwierającą klasę, metodę, lub pętlę w tej samej linii co wspomniane elementy, zajmuje to mniej miejsca i kod nie jest taki rozlazły - na ekranie zmieści Ci się po prostu więcej kodu i nie będzie trzeba dużo scrollować.
+class Klasa{
+  void metoda{
+     int zmienna;
+  }
+}
+7. W Javie wielkość liter ma znaczenie!
+ int liczba;
+ int Liczba;1
+2
+To dwie różne zmienne!
