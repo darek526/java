@@ -1,0 +1,46 @@
+public class TestSwitch{
+  public static void main(String[] args){
+	  int zmienna = 4;
+
+	  switch(zmienna){
+	  case 1:
+		  System.out.println("Liczba to 1");
+		  break;
+	  case 2:
+		  System.out.println("Liczba to 2");
+		  break;
+	  default:
+		  System.out.println("Liczba "+zmienna+" to ani 1, ani 2");
+	  }
+  }
+}
+/*wynik:
+Liczba 4 to ani 1, ani 2
+*/
+//***********************************
+import java.util.Scanner;
+//pobranie 2 liczb z klawiarury i porownanie
+public class Odczyt{
+    public static void main(String[] args){
+        Scanner odczyt = new Scanner(System.in);
+
+        System.out.println("Podaj 1 liczbę: ");
+        int a = odczyt.nextInt();
+        System.out.println("Podaj 2 liczbę: ");
+        int b = odczyt.nextInt();
+
+        if(a==b)
+            System.out.println("Podane liczby są równe");
+        else if(a > b)
+            System.out.println("Pierwsza liczba jest większa");
+        else
+            System.out.println("Druga liczba jest większa");
+    }
+}
+/*wynik:
+Podaj 1 liczbę: 
+5
+Podaj 2 liczbę: 
+3
+Pierwsza liczba jest większa
+*/
